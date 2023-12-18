@@ -1,0 +1,16 @@
+spring:
+  thymeleaf:
+    cache: false
+# ↑thymeleafのキャッシュを無効に設定
+  jmx:
+    enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/boot1?serverTimezone=Asia/Tokyo
+    username: root
+    Password: root
+# ↑データベース接続の各種設定
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+#    ↑データベースとJavaのオブジェクトをマッピングするための設定
